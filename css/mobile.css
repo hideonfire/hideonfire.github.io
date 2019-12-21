@@ -1,4 +1,7 @@
 body {
-  margin: 0 0;
-  width: 90%; 
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 18px;
+  padding: 2% 5% 5% 5%;
+  line-height: 150%;
+  border: 1px solid LightGrey; 
 }
