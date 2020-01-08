@@ -1,0 +1,208 @@
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+	
+	<title></title>
+	<meta name="keywords" content="人生x我=">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+	   <link href="/css/main.css?v=3" rel="stylesheet" type="text/css">
+    
+        <script src="/js/util.js"></script>
+        <script>
+            if(isMobile()) {
+                loadjscssfile('/css/mobile.css', 'css');
+            } else {
+                loadjscssfile('/css/desktop.css', 'css');
+            }
+        </script> 
+    
+
+    <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
+
+    
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=3">
+    
+    
+</head>
+
+<body>
+
+
+<h2 class="title"></h2>
+<!---
+<div style="text-align:center;margin-top: -10px;">
+<div class="article-category">
+发表于2020年1月8日
+
+
+
+
+ </div>
+--->
+</div>
+
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#计算机网络技术"><span class="toc-text">计算机网络技术</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#C-语言"><span class="toc-text">C 语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#软件工程"><span class="toc-text">软件工程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据库"><span class="toc-text">数据库</span></a></li></ol></li></ol>
+<script src="/assets/js/APlayer.min.js"> </script><hr>
+<h2 id="计算机网络技术"><a href="#计算机网络技术" class="headerlink" title="计算机网络技术"></a>计算机网络技术</h2><h3 id="C-语言"><a href="#C-语言" class="headerlink" title="C 语言"></a>C 语言</h3><ol>
+<li><p>C 语言的历史和特点。</p>
+<ol>
+<li>历史：C 语言之所以命名为C，是因为C语言源自Ken Thompson 发明的 B 语言，而 B 语言则源自于BCPL语言。1972年贝尔实验室在 B 语言的基础上设计出了 C 语言。</li>
+<li>特点：高级语言，结构式语言，代码级别的跨平台，使用指针。</li>
+<li>C 语言是面向过程的计算机编程语言，函数是 C 语言的基本单位，语句是函数的基本单位。C语言具有强大的移植性。</li>
+</ol>
+</li>
+<li><p>基本数据类型</p>
+<ol>
+<li>数值类型：整形：短整形 short，整形 int，长整型 long。 浮点型：单精度型 float，双精度型 double。 字符类型 char。</li>
+<li>%o 八进制 %x 十六进制 %d 十进制</li>
+<li>变量的属性：操作属性，存储属性，变量定义的一般形式[存储类型标识符] 数据类型标识符 变量表列</li>
+<li>变量的存储类型分类：静态存储变量，动态存储变量。内存变量，寄存器变量。四张存储类型：auto（自动） static（静态） register（） extern（ 外部）</li>
+<li>变量作用域<ol>
+<li>在一个函数内部定义的变量，其作用域为定义点到本函数体结束。</li>
+<li>在一个复合语句中定义的变量，它的作用域为本复合语句内部。</li>
+<li>函数的形参也是局部变量，其作用域为所在的函数。</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>运算符表达式</p>
+<p>比较运算符 &gt; 逻辑运算符 &gt; 赋值运算符</p>
+</li>
+<li><p>函数</p>
+<p>函数原型包括函数名，形参，返回值类型。</p>
+<p>函数定义不能嵌套，每个函数独立，函数的调用可以嵌套。</p>
+</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">(<span class="keyword">int</span> n)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"please input 5 numbers:"</span>);</span><br><span class="line">    func(<span class="number">5</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n &lt;= <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">char</span> next = getchar();</span><br><span class="line">        <span class="built_in">putchar</span>(next);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">char</span> next = getchar();</span><br><span class="line">        func(n<span class="number">-1</span>);</span><br><span class="line">        <span class="built_in">putchar</span>(next);</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="软件工程"><a href="#软件工程" class="headerlink" title="软件工程"></a>软件工程</h3><ol>
+<li><p>软件工程的目标和内容</p>
+<ol>
+<li>软件工程就是用科学的知识和技术原理来定义，开发，维护软件的一门学科。</li>
+<li>软件工程目标：付出较低的开发成本，达到要求的功能，取得较好的性能，开发的软件易于移植，只需较低的维护费用，能按时完成开发任务，及时交付使用，开发软件的可靠性高。</li>
+</ol>
+</li>
+<li><p>软件工程三要素</p>
+<ol>
+<li>方法：（面向对象方法）完成软件开发的各项任务的技术方法，为软件开发提供如何做的技术。</li>
+<li>工具：（EA）为运用方法而提供的自动或半自定的软件工程支撑环境。</li>
+<li>过程：为了获得高质量的软件所需要完成的一系列任务的框架，它规定了完成各项任务的工作步骤，如何将软件工程方法和工具相结合，合理及时地进行软件开发。</li>
+</ol>
+</li>
+<li><p>软件开发模型</p>
+<ol>
+<li>瀑布模型：将软件生命周期分为制定计划，需求分析，软件设计，程序编写，软甲测试，运行维护六个基本活动，并且规定了上而下，相互衔接的固定次序，如同瀑布流水，逐级下落。</li>
+<li>快速原型模型：第一步是建造一个快速原型，实现客户或未来的用户与系统的交互，用户或客户对原型进行评价，进一步细化待开发软件的需求，通过逐步调整原型使其满足客户要求。第二步则是在第一步的基础上开发客户满意的软件产品。</li>
+<li>螺旋模型：制定计划：确定软件目标，选定实施方案，弄清项目开发限制条件。风险分析：分析评估所选方案，考虑如何识别和消除风险。实施工程：实施软件开发和验证。客户评估：评论开发工作，提出修正建议，制定下一步计划。</li>
+<li>喷泉模型：也称面向对象的生存期模型。</li>
+<li>增量模型：软件被作为一系列的增量构件来设计、实现、集成和测试。每一个构件是由多种相互作用的模块所形成的提供特定功能的代码片段构成，增量构件在各个阶段并不交付一个可运行的完整产品，而是满足客户需求的一个子集的可运行产品。</li>
+<li>统一软件过程。</li>
+</ol>
+</li>
+<li><p>软件生存周期：</p>
+<p>软件生存周期：一个软件从提出开发要求开始直到该软件报废为止的整个时期。包括：问题定义、可行性分析、需求分析、概要设计、详细设计、编码、测试、维护。</p>
+</li>
+<li><p>软件度量</p>
+<p>方法体系：项目度量，规模度量，成本度量，顾客满意度量。</p>
+</li>
+<li><p>软件质量</p>
+<p>正确性，健壮性，效率，完整性，可用性，风险，可理解性，可维修性，灵活性，可测试性，可移植性，可再用性，互运行性。</p>
+</li>
+<li><p>软件需求分析：需求获取，需求分析，编写需求规格说明书和需求评审。</p>
+</li>
+<li><p>软件测试</p>
+<ol>
+<li>步骤：单元测试 →  集成测试 → 确认测试 → 系统测试</li>
+<li>单元测试：对程序中每一个程序单元进行测试，检查各个模块是否实现规定的功能，从而发现模块在编码中或算法中的错误。该阶段设计编码额详细设计文档。</li>
+<li>集成测试：检查与设计相关的软件体系结构的有关问题，也就是检查概要设计是否合理有效</li>
+<li>确认测试：检查已实现的软件是否满足需求规格说明书中确定的各种需求。</li>
+<li>系统测试是把已确认的软件与其他系统元素(如硬件、其他支持软件、数据、人工)等结合在一起测试。已确认软件是否可以交付使用。</li>
+</ol>
+</li>
+<li><p>软件维护</p>
+<ol>
+<li>正确性维护</li>
+<li>适应性维护</li>
+<li>完善性维护</li>
+<li>预防性维护</li>
+</ol>
+</li>
+</ol>
+<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><ol>
+<li><p>数据库的体系结构：内部模式，概念模式，外部模式</p>
+</li>
+<li><p>数据模型</p>
+<ol>
+<li>层次模型：概念模型，逻辑模型，物理模型。</li>
+<li>重要模型：层次模型 网状模型 关系模型。</li>
+</ol>
+</li>
+<li><p>数据视图</p>
+<p>视图是原始数据库数据的一种变换，是查看表中数据的另外一种方式。我们可以将视图看成是一个移动的窗口，从这个窗口中可以看到感兴趣的数据。</p>
+</li>
+<li><p>关系代数、关系演算及关系模型</p>
+<ol>
+<li>传统的集合运算：并、差、交，广义笛卡尔积。</li>
+<li>专门的关系运算：选择、投影、连接、除。</li>
+<li>关系的数据完整性：域完整性、实体完整性，参照完整性和用户自定义的完整性。</li>
+</ol>
+</li>
+<li><p>数据依赖：函数依赖、多值依赖、连接依赖。</p>
+</li>
+<li><p>数据库范式</p>
+<ol>
+<li><p>第一范式：数据库表中每一个都是不可分割的基本数据项，同一列中不能有多个值或者不能有重复的值。简而言之就是无重复的列。由“职工号”“姓名”“电话号码”组成的表(一个人可能有一部办公电话和一部移动电话)，这时将其规范化为1NF可以将电话号码分为“办公电话”和“移动电话”两个属性，即职工(职工号，姓名，办公电话，移动电话)。</p>
+</li>
+<li><p>第二范式：是在第一范式的基础上建立的即满足第二范式(2NF)必须先满足第一范式(1NF)。第二范式(2NF)要求数据库表中的每个实例或行必须可以被唯一地区分。为实现区分通常需要为表加上一个列，以存储各个实例的唯一标识。</p>
+<p>如果关系模型R为第一范式，并且R中的每一个非主属性完全函数依赖于R的某个候选键，则称R为第二范式模式(如果A是关系模式R的候选键的一个属性，则称A是R的主属性，否则称A是R的非主属性)。</p>
+<p>例如，在选课关系表(学号，课程号，成绩，学分)，关键字为组合关键字(学号，课程号)，但由于非主属性学分仅依赖于课程号，对关键字(学号，课程号)只是部分依赖，而不是完全依赖，因此此种方式会导致数据冗余以及更新异常等问题，解决办法是将其分为两个关系模式：学生表(学号，课程号，分数)和课程表(课程号，学分)，新关系通过学生表中的外关键字课程号联系，在需要时进行连接。      </p>
+</li>
+<li><p>如果关系模型R是第二范式，且每个非主流属性都不传递依赖于R的候选键，则称R是第三范式的模式。 以学生表(学号，姓名，课程号，成绩)为例，其中学生姓名无重名，所以该表有两个候选码(学号，课程号)和(姓名，课程号)，故存在函数依赖：学号——&gt;姓名，(学号，课程号)——&gt;成绩，唯一的非主属性成绩对码不存在部分依赖，也不存在传递依赖，所以属性属于第三范式。</p>
+</li>
+<li><p>设R是一个关系模型，D是R上的多值依赖集合。如果D中存在凡多值依赖X-&gt;Y时，X必是R的超键，那么称R是第四范式的模式。例如，职工表(职工编号，职工孩子姓名，职工选修课程)，在这个表中，同一个职工可能会有多个职工孩子姓名，同样，同一个职工也可能会有多个职工选修课程，即这里存在着多值事实，不符合第四范式。如果要符合第四范式，只需要将上表分为两个表，使它们只有一个多值事实，例如职工表一(职工编号，职工孩子姓名)，职工表二(职工编号，职工选修课程)，两个表都只有一个多值事实，所以符合第四范式。</p>
+</li>
+</ol>
+</li>
+<li><p>数据库设计流程</p>
+<ol>
+<li>需求分析：了解用户的数据需求、处理需求、安全性及完整性要求。</li>
+<li>概念设计：通过数据抽象，设计系统概念模型，一般为E-R模型。</li>
+<li>逻辑结构设计：将概念模型转为某个DBMS所支持的数据模型。</li>
+<li>物理结构设计：设计数据库的存储结构和存取方法，如索引的设计。</li>
+<li>数据库实施：组织数据入库，编写应用程序，试运行。</li>
+<li>运行维护：系统投入运行，长期的维护工作。</li>
+</ol>
+</li>
+</ol>
+<ol start="8">
+<li><p>数据库的事物：原子性，一致性，隔离性，持久性。</p>
+</li>
+<li></li>
+</ol>
+
+
+<!--<a href="https://blog.rsndm.org/2020/01/08/计算机网络技术/#disqus_thread" class="article-comment-link">Comments</a>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = ''; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+-->
+
+
+
+
+
+
+
+</body>
+</html>
