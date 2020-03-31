@@ -44,7 +44,6 @@
                     
                     
                     
-<div id="aplayer"></div>
 <li class="list-group-item title">
     <a target="_blank" href="/2020/01/08/计算机网络技术/">计算机网络技术</a>
 </li>
@@ -52,7 +51,6 @@
 
                     
                     
-<div id="aplayer"></div>
 <li class="list-group-item title">
     <a target="_blank" href="/2020/01/08/计算机科学技术基础/">计算机科学技术基础</a>
 </li>
@@ -60,7 +58,6 @@
 
                     
                     
-<div id="aplayer"></div>
 <li class="list-group-item title">
     <a target="_blank" href="/2019/12/22/数字民权组织EFF/">数字民权组织 EFF 联合创始人去世，他 28 年前开始担心的那些大问题都在恶化</a>
 </li>
@@ -68,7 +65,6 @@
 
                     
                     
-<div id="aplayer"></div>
 <li class="list-group-item title">
     <a target="_blank" href="/2019/12/22/hello-world/">Hello World</a>
 </li>
@@ -76,7 +72,6 @@
 
                     
                     
-<div id="aplayer"></div>
 <li class="list-group-item title">
     <a target="_blank" href="/2019/12/22/理性的力量/">理性的力量</a>
 </li>
@@ -96,15 +91,34 @@
 
 
 <!--加载导航栏所需js文件-->
+<div id="aplayer"></div>
 <script>
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
+    volume: 0.1,
+    loop: 'all',
+    order: 'random',
+    listFolded: false,
+    listMaxHeight: 90,
+    fixed: true,
     audio: [{
-        name: 'Bohemain',
+        name: 'Bohemian Rhapsody',
         artist: 'Queen',
         url: 'http://music.163.com/song/media/outer/url?id=1868553.mp3',
         cover: 'http://p1.music.126.net/F8R535oP-V4UOa0O2n1Y9Q==/798245441818276.jpg'
-    }]
+    },
+    {
+        name: 'Under Pressure',
+        artist: 'Queen',
+        url: 'http://music.163.com/song/media/outer/url?id=445702291.mp3',
+        cover: 'http://p1.music.126.net/gFUgfpGbuD2KjFFs9wLxPA==/18776360068780164.jpg'
+    },
+   {
+        name: 'Wasted',
+        artist: 'Brandi Carlile',
+        url: 'http://music.163.com/song/media/outer/url?id=16783825.mp3',
+        cover: 'http://p1.music.126.net/j9F7g2VIBetk_3L4p1HpHw==/604731395284271.jpg?'
+    }],
 });
 </script>
 <script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
